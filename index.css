@@ -480,6 +480,14 @@ footer p {
   background-color: rgba(0,0,0,0.9);
 }
 
+.modal .carousel-image {
+  display: none !important;
+}
+
+.carousel-image {
+  display: none !important;
+}
+
 .modal-content {
   margin: auto;
   display: block;
@@ -506,7 +514,7 @@ footer p {
 }
 
 .carousel-image.active {
-  display: block;
+  display: block !important;
 }
 
 .prev, .next {
