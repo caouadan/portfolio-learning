@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Danie Chey - Graphiste & Conceptrice E-Learning</title>
+  <title>Danie Chey - Learning designer & developer</title>
+  <link rel="icon" type="image/webp" href="assets/logo-portfolio-danie-chey.webp">
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -26,7 +27,7 @@
     <div class="container">
       <img src="assets/photo.png" alt="Danie Chey">
       <h1>Danie Chey</h1>
-      <p>Graphiste & Conceptrice E-Learning</p>
+      <p>Learning designer & developer</p>
       <p class="location">Lyon, France • Télétravail • Freelance & CDI</p>
       <p class="tjm">TJM : 350€ (négociable si mission longue)</p>
     </div>
@@ -39,7 +40,7 @@
       <div class="about-content">
         <div class="about-text">
           <h3>Présentation</h3>
-          <p>Graphiste et conceptrice e-learning avec plusieurs années d'expérience dans la création de contenus pédagogiques et visuels digitaux innovants. Spécialisée dans la conception de modules interactifs, je combine expertise pédagogique et compétences créatives pour produire des formations efficaces et esthétiquement soignées.</p>
+          <p>Développeuse, graphiste et conceptrice e-learning avec plusieurs années d'expérience dans la création de contenus pédagogiques et visuels digitaux innovants. Spécialisée dans la conception de modules interactifs, je combine expertise pédagogique et compétences créatives pour produire des formations efficaces et soignées.</p>
           <p>Ma polyvalence me permet de gérer des projets de bout en bout : de la conception visuelle à l'intégration technique, en passant par la rédaction pédagogique et l'animation graphique.</p>
         </div>
         <div>
@@ -113,9 +114,67 @@
             <a href="https://learn-in.fr/_SiteInfans/_ExtraitsFormations/PIX/Extrait_EffectuerUneRechercheInternet/story.html?username=guest" target="_blank" class="btn-view">Voir la formation</a>
           </div>
         </div>
+
+        <!-- Formation 4 -->
+        <div class="formation-card">
+          <div class="formation-header"><img src="assets/secourisme.jpg" alt="Secourisme"></div>
+          <div class="formation-body">
+            <h3>Secourisme</h3>
+            <p>Formation aux gestes de premiers secours et à la prévention des risques pour intervenir efficacement en cas d'urgence.</p>
+            <div class="formation-tags">
+              <span class="tag">Secourisme</span>
+              <span class="tag">Prévention</span>
+            </div>
+            <a href="https://learn-in.fr/_ContenusDeFormation/428_Secourisme/_Lecons/01_Protection/story.html?username=guest" target="_blank" class="btn-view">Voir la formation</a>
+          </div>
+        </div>
+
+        <!-- Formation 5 -->
+        <div class="formation-card">
+          <div class="formation-header"><img src="assets/ecoresponsable.jpg" alt="Produits écoresponsables"></div>
+          <div class="formation-body">
+            <h3>Produits écoresponsables</h3>
+            <p>Formation visant à sensibiliser aux enjeux environnementaux et à découvrir des alternatives durables pour réduire notre impact écologique au quotidien.</p>
+            <div class="formation-tags">
+              <span class="tag">Alternatives</span>
+              <span class="tag">Naturel</span>
+            </div>
+            <a href="https://learn-in.fr/_ContenusDeFormation/430-FabricationProduitsEco/_Lecons/04_AlternativesEco/story.html?username=guest" target="_blank" class="btn-view">Voir la formation</a>
+          </div>
+        </div>
+
+        <!-- Ressources -->
+        <div class="formation-card">
+          <div class="formation-header"><img src="assets/doc-ecoresponsable/recettes_page-0001.jpg" alt="Recettes naturelles"></div>
+          <div class="formation-body">
+            <h3>Extraits de recettes</h3>
+            <p>Collection de recettes écologiques à base d'ingrédients simples et durables pour un mode de vie plus respectueux de l'environnement.</p>
+            <div class="formation-tags">
+              <span class="tag">Recettes</span>
+              <span class="tag">Ingrédients</span>
+            </div>
+            <button class="btn-view" onclick="openModal('recettesModal')">Voir la ressource</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- Modal Carousel -->
+  <div id="recettesModal" class="modal">
+    <span class="close-modal" onclick="closeModal('recettesModal')">&times;</span>
+    <div class="modal-content">
+      <div class="carousel">
+        <img class="carousel-image" src="assets/doc-ecoresponsable/recettes_page-0001.jpg" alt="Recette 1">
+        <img class="carousel-image" src="assets/doc-ecoresponsable/recettes_page-0002.jpg" alt="Recette 2">
+        <img class="carousel-image" src="assets/doc-ecoresponsable/recettes_page-0003.jpg" alt="Recette 3">
+        <img class="carousel-image" src="assets/doc-ecoresponsable/recettes_page-0004.jpg" alt="Recette 4">
+        <img class="carousel-image" src="assets/doc-ecoresponsable/recettes_page-0005.jpg" alt="Recette 5">
+        <a class="prev" onclick="changeSlide('recettesModal', -1)">&#10094;</a>
+        <a class="next" onclick="changeSlide('recettesModal', 1)">&#10095;</a>
+      </div>
+    </div>
+  </div>
 
   <!-- Compétences -->
   <section id="skills">
@@ -160,6 +219,7 @@
           <ul>
             <li>HTML5 & CSS3/SCSS</li>
             <li>JavaScript (ES6+)</li>
+            <li>ReactJS & Redux</li>
             <li>Responsive Design</li>
             <li>Git & GitHub</li>
             <li>Intégration Figma</li>
@@ -183,9 +243,8 @@
             <li>Respect des délais</li>
             <li>Collaboration d'équipe</li>
             <li>Respect des chartes graphiques</li>
-            <li>Slack</li>
-            <li>Trello</li>
-            <li>Notion</li>
+            <li>Slack, Trello, Notion</li>
+            <li>Méthode Agile Scrum</li>
           </ul>
         </div>
       </div>
@@ -245,5 +304,48 @@
   <footer>
     <p>&copy; 2026 Danie Chey. Tous droits réservés.</p>
   </footer>
+
+  <script>
+    let slideIndexes = {};
+
+    function openModal(modalId) {
+      const modal = document.getElementById(modalId);
+      modal.style.display = "block";
+      slideIndexes[modalId] = 0;
+      showSlide(modalId);
+    }
+
+    function closeModal(modalId) {
+      const modal = document.getElementById(modalId);
+      modal.style.display = "none";
+    }
+
+    function changeSlide(modalId, n) {
+      const images = document.querySelectorAll(`#${modalId} .carousel-image`);
+      slideIndexes[modalId] += n;
+      if (slideIndexes[modalId] >= images.length) {
+        slideIndexes[modalId] = 0;
+      } else if (slideIndexes[modalId] < 0) {
+        slideIndexes[modalId] = images.length - 1;
+      }
+      showSlide(modalId);
+    }
+
+    function showSlide(modalId) {
+      const images = document.querySelectorAll(`#${modalId} .carousel-image`);
+      images.forEach((img, index) => {
+        img.classList.remove('active');
+        if (index === slideIndexes[modalId]) {
+          img.classList.add('active');
+        }
+      });
+    }
+
+    window.onclick = function(event) {
+      if (event.target.classList.contains('modal')) {
+        event.target.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>
